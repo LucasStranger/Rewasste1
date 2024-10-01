@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+    font-family: "Playfair Display", serif;
+}
+:root{
+   --rosa: #D9C1D2;
+   --verde: #055902;
+   --verde-escuro: #014005;
+   --degrade-btn: repeating-linear-gradient(to right,#EDB7C5, #CAE8E3);
+   --degrade-novo: linear-gradient(to right, #F2ACC6, #92C8E0, #84D9C9); 
+   --marrom-claro: #BF8450;
+   --cinza: #D9D9D9;
+   --color-p: #ffffff;
+   --color-p-2: #ffffff;
+   --salmao: #FFC7BD;
+   --rosaclarinho: #EDB7C5;
+   --ciano: #CAE8E3;
+   --cinzaescuro: #B3B3B3;
+   --cinzanormal: #DBDBD9;
+   --color1: #F2ACC6;
+   --color2: #92C8E0;
+   --color3: #84D9C9;
+   --color4: #FDE3A6;
+   --color5: #F3DFE0;
+
+}
+.background-verde{
+    background-image: var(--degrade-novo);
+}
+/* Classes Reutilizaveis */
+.container{
+    max-width: 1440px;
+    padding: 0 5.4%;
+    margin: 0 auto;
+}
+section,
+footer{
+    padding: 2.7rem 0;
+}
+.btn-gradiente{
+    padding: 10px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    background-image: var(--degrade-btn);
+}
+/* classes do Site */
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.Logo a{
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+.ul{
+    display: flex;
+    align-items: center;
+}
+.ul li{
+    margin: 0 35px;
+    font-size: 20px;
+}
+.ul li a{
+    color: black;
+}
+/*Main*/
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+.Main-text{
+    width: 50%;
+    color: black;
+}
+.Main-text h1{
+    font-size: 4.5rem;
+}
+.Main-text div{
+    align-items: center;
+    display: flex;
+    margin: 20px;
+}
+.Main-img{
+    width: 40%;
+}
+.Main-img img{
+    width: 100%;
+}
+/*Menu*/
+.menu-icon{
+    display: none;
+    position: relative;
+    z-index: 10;
+}
+/*Resultados*/
+.Resultados{
+    background:#FDE3A6;
+    background-position: start;
+}
+.Resultados .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Resultados .resultados-text{
+    color: #F2ACC6;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+}
+.Resultados .resultados-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F2ACC6;
+}
+.Resultados .resultados-numero p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+.Resultados .resultados-numero p span{
+    font-size: 30px;
+    font-weight: 600;
+}
+/*section diferenciais*/
+.diferenciais .card{
+    width: 30%;
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.diferenciais .card:hover{
+    box-shadow: 0px 10px 67px 8px #92C8E0;
+}
+.diferenciais .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+.diferenciais .card img{
+    width: 60px;
+}
+.diferenciais .card .titulo{
+    margin: 13px 0;
+    font-weight: 600;
+}
+/*section food*/
+.Food .container{
+    display: flex;
+    align-items: center;
+}
+.Food .food-img{
+    width: 50%;
+}
+.Food .food-img img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Food .food-texto{
+    width: 50%;
+    padding-left: 90px;
+}
+.Food .food-texto h2{
+    font-size: 2.5em;
+}
+.Food .food-texto p{
+    margin: 20px 0;
+    color: var(--degrade-novo);
+}
+.Food .food-texto p b{
+    color: var(--color4);
+    font-size: 25px;
+}
+.Food .food-texto img{
+    width: 50%;
+    border-radius: 10px;
+}
+.melhores-receitas .rosa{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color1);
+}
+.melhores-receitas h2{
+    font-size: 2.5rem;
+}
+.melhores-receitas .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.melhores-receitas .cards .card-item{
+    width: 30%;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #F2ACC6, #FDE3A6);
+    box-shadow: 0px 35px 97px -15px rgb(0, 0, 0, 0.08);
+}
+.melhores-receitas .cards .card-item:hover{
+    background-image: linear-gradient(to left, #FDE3A6, #84D9C9);
+    box-shadow: 0px 10px 67px 8px #FDE3A6;
+}
+.melhores-receitas .cards img{
+    width: 80px;
+}
+.melhores-receitas .cards .food-food{
+    margin: 5px 0px;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+.melhores-receitas .cards button{
+    border-radius: 15px;
+    padding: 10px 20px;
+    color: white;
+    background-color: var(--color1);
+    border: none;
+}
+/*Newsletter*/
+.newsLetter{
+    background-color: var(--color2);
+}
+.newsLetter .box-newsLetter{
+    text-align: center;
+    padding: 100px;
+    background-image: url(../img/background-newsletter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.newsLetter .box-newsLetter h2{
+    font-size: 2.5rem;
+}
+.newsLetter .box-newsLetter p{
+    margin: 13px 0;
+}
+.newsLetter .box-newsLetter input{
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: var(--color1);
+}
+.newsLetter .box-newsLetter button{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 14px;
+    color: var(--color1);
+    background-color: var(--color3);
+    cursor: pointer;
+}
+/*responsivo*/
+@media (max-width: 960px){
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    .ul{
+        position: fixed;
+        background: var(--degrade-btn);
+        top: 0;
+        width: 300px;
+        height: 100%;
+        left: -300px;
+        transition: left 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    }
+    .ul li {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .ul.ativo{
+        left: 0;
+    }
+    main .container{
+        flex-direction: column;
+    }
+
+    main .container .Main-img,
+    main .container .Main-text{
+        width: 100%;
+        text-align: center;
+    }
+    main .container .Main-text h1{
+        font-size: 4rem;
+    }
+    main .container .Main-text div{
+        justify-content: center;
+    }
+    .Resultados .container{
+        flex-direction: column;
+
+    }
+    .Resultados .resultados-text,
+    .Resultados .resultados-numero{
+        width: 100%;
+        text-align: center;
+    }
+    .resultados-numero{
+        margin-top: 30px;
+    }
+    .diferenciais .container{
+        flex-direction: column;
+    }
+    .diferenciais .card{
+        width: 100%;
+    }
+    .Food .container{
+        flex-direction: column-reverse;
+    }
+    .Food .casa-texto,
+    .Food .casa-img{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .melhores-receitas .cards{
+        flex-direction: column;
+    }
+    .melhores-receitas .cards .card-item{
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 440px){
+    .Resultados .resultados-numero{
+        flex-direction: column;
+    }
+}
+/* Footer */
+.footer {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.icon-ground {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-logo a {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 20px;
+    }
+}
+
+/* termos-page */
+#termos-page {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#termos-page .container {
+    max-width: 1000px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#termos-page h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#termos-page h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#termos-page p, #termos-page li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+#termos-page ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#termos-page .last-updated {
+    font-style: italic;
+    color: #888;
+}
