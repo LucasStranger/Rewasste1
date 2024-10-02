@@ -107,7 +107,7 @@ main .container{
 }
 /*Resultados*/
 .Resultados{
-    background:#FDE3A6;
+    background:#F2ACC6;
     background-position: start;
 }
 .Resultados .container{
@@ -116,7 +116,7 @@ main .container{
     justify-content: center;
 }
 .Resultados .resultados-text{
-    color: #F2ACC6;
+    color: #FDE3A6;
     font-size: 1.6rem;
     font-weight: 600;
     width: 50%;
@@ -125,7 +125,7 @@ main .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #F2ACC6;
+    color: #FDE3A6;
 }
 .Resultados .resultados-numero p{
     text-align: center;
@@ -138,6 +138,7 @@ main .container{
 }
 /*section diferenciais*/
 .diferenciais .card{
+    background-image: url(../img/lindo.gif);
     width: 30%;
     cursor: pointer;
     padding: 30px;
@@ -267,8 +268,8 @@ main .container{
     outline: none;
     padding: 15px;
     border-radius: 14px;
-    color: var(--color1);
-    background-color: var(--color3);
+    color: var(--color4);
+    background-color: black;
     cursor: pointer;
 }
 /*responsivo*/
