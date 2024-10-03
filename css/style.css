@@ -116,7 +116,7 @@ main .container{
     justify-content: center;
 }
 .Resultados .resultados-text{
-    color: #FDE3A6;
+    color: black;
     font-size: 1.6rem;
     font-weight: 600;
     width: 50%;
@@ -125,7 +125,7 @@ main .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FDE3A6;
+    color: black;
 }
 .Resultados .resultados-numero p{
     text-align: center;
