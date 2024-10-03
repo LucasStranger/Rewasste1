@@ -95,9 +95,11 @@ main .container{
 }
 .Main-img{
     width: 40%;
+    border-radius: 15px;
 }
 .Main-img img{
     width: 100%;
+    border-radius: 15px;
 }
 /*Menu*/
 .menu-icon{
